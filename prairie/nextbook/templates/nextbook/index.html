@@ -1,0 +1,25 @@
+{% load static %}
+
+<html>
+
+
+  <head>
+
+    <title>Nextbook</title>
+    <link href="//fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+  </head>
+
+    <h3>Next you should read:</h3>
+     <p> {{ books.title }} by {{ books.author }}</p>
+
+  <button type="button">
+    <a href="{% url 'suggestion' %}" style="text-decoration:none">Get another suggestion</a>
+  </button>
+
+    <div class="home-button">
+      <button type="button"><a href="/" style="text-decoration:none">Back to home</a></button>
+    </div>
+
+</html>

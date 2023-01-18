@@ -1,0 +1,62 @@
+h2 {
+    color: #6738B8;
+    font-family: 'Rubik';
+    text-decoration: none;
+}
+
+h3 {
+    color: #6738B8;
+    font-family: 'Rubik';
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Rubik';
+
+}
+
+.django-button {
+    box-align: bottom;
+
+}
+
+button {
+    cursor:pointer;
+    background-color: #E1E6F0;
+    border: none;
+    border-radius: 4px;
+    color: #6738B8;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Rubik';
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.menu-header {
+    background-color: #E1E6F0;
+    margin-top: 30;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+}
+
+body {
+    margin: auto;
+    margin-top:30;
+    margin-bottom:30;
+    width: 50%;
+    border: 3px solid;
+    border-color: #6738B8;
+    padding: 10px;
+}
+
+
+
+
+.home-button {
+  margin-top:30;
+  margin-bottom:30;
+}

@@ -1,0 +1,45 @@
+{% load static %}
+
+<html>
+  <head>
+
+    <title>Nextbook: Newbook</title>
+    <link href="//fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+  </head>
+
+  <body>
+  {% block content %}
+
+    <div class="header">
+      <h3>New book</h3>
+    </div>
+
+      <form onsubmit="return results();" method="POST" class="post-form">{% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="save btn btn-default">Add book</button>
+      </form>
+
+  {% endblock %}
+
+  <br>
+  <br>
+
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+
+  <br>
+
+  <div class="home-button">
+    <button type="button"><a href="/" style="text-decoration:none">Back to home</a></button>
+  </div>
+
+  </body>
+
+</html>

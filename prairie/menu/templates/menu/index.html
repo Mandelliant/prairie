@@ -1,0 +1,37 @@
+{% load static %}
+
+<html>
+  <head>
+
+    <title>Nextbook</title>
+    <link href="//fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+  </head>
+
+
+  <body>
+    <div class="menu-header">
+      <h2>What would you like to do?</h2>
+    </div>
+
+    <div class="selection-body">
+      <p>Select 'Add a new book' or 'Get a suggestion':</p>
+      <br>
+
+      <button type='button' value="newbook"><a href="/newbook/" style="text-decoration:none">Add a new book</a></button>
+
+      <br>
+      <br>
+      <button type='button' value="nextbook"><a href="/nextbook/" style="text-decoration:none">Get a reading suggestion</a></button>
+    </div>
+
+    <br>
+    <br>
+    <div class="django-button">
+      <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangoproject120x25.gif" border="0" alt="A Django project." title="A Django project." /></a>
+    </div>
+
+  </body>
+
+</html>
