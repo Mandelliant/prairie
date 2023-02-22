@@ -1,6 +1,31 @@
 {% load static %}
 
 <html>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .bg {
+          /* The image used */
+          background-image: url("img_girl.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+
+{% comment %}
+		<img src="{% static 'css/menu/bliss.png' %}" alt="Blissful field">
+	
+{% endcomment %}
+
   <head>
 
     <title>Nextbook</title>
@@ -11,26 +36,30 @@
 
 
   <body>
+ 
+
     <div class="menu-header">
-      <h2>What would you like to do?</h2>
+      <h2>Welcome to the Prairie Library Manager</h2>
     </div>
-
+    <br>
     <div class="selection-body">
-      <p>Select 'Add a new book' or 'Get a suggestion':</p>
+      <p>Prairie stores your personal library and suggests your next book when you just can't pick from your TBR pile.</p>
       <br>
-
+      
+      <div class="button-center">
       <button type='button' value="newbook"><a href="/newbook/" style="text-decoration:none">Add a new book</a></button>
+      </div>
 
       <br>
       <br>
+      <div class="button-center">
       <button type='button' value="nextbook"><a href="/nextbook/" style="text-decoration:none">Get a reading suggestion</a></button>
+      </div>
     </div>
 
     <br>
     <br>
-    <div class="django-button">
-      <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangoproject120x25.gif" border="0" alt="A Django project." title="A Django project." /></a>
-    </div>
+   
 
   </body>
 

@@ -1,3 +1,21 @@
+.bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+  .bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }
+
 h2 {
     color: #6738B8;
     font-family: 'Rubik';
@@ -35,6 +53,9 @@ button {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.button-center {
+    text-align: center;
+}
 
 .menu-header {
     background-color: #E1E6F0;
@@ -52,8 +73,6 @@ body {
     border-color: #6738B8;
     padding: 10px;
 }
-
-
 
 
 .home-button {
